@@ -35,3 +35,4 @@ set_global_assignment -name VERILOG_FILE src/clock.v
 set_global_assignment -name VERILOG_FILE src/tsconf.v
 set_global_assignment -name SYSTEMVERILOG_FILE TSConf.sv
 set_global_assignment -name VERILOG_FILE src/joydb9md.v
+set_global_assignment -name VERILOG_FILE src/joydb15.v
