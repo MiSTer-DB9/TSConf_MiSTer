@@ -3,4 +3,4 @@ LABEL maintainer="theypsilon@gmail.com"
 WORKDIR /project
 ADD . /project
 RUN /opt/intelFPGA_lite/quartus/bin/quartus_sh --flow compile TSConf.qpf
-CMD cat /project/output_files/TSConf.rbf
+CMD ["cat", "/project/output_files/TSConf.rbf"]
