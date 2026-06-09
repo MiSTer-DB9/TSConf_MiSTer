@@ -393,8 +393,8 @@ wire  [7:0] ioctl_index;
 
 
 // F2 F1 U D L R 
-wire [31:0] joy_0 = joydb_1ena ? (OSD_STATUS? 32'b000000 : joydb_1[5:0]) : joy_0_USB;
-wire [31:0] joy_1 = joydb_2ena ? (OSD_STATUS? 32'b000000 : joydb_2[5:0]) : joydb_1ena ? joy_0_USB : joy_1_USB;
+wire [31:0] joy_0 = joydb_1ena ? (OSD_STATUS? 32'b000000 : joydb_1_mapped[5:0]) : joy_0_USB;
+wire [31:0] joy_1 = joydb_2ena ? (OSD_STATUS? 32'b000000 : joydb_2_mapped[5:0]) : joydb_1ena ? joy_0_USB : joy_1_USB;
 
 
 
